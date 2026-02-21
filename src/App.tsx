@@ -9,10 +9,7 @@ import Register from "./pages/auth/Register";
 import Overview from "./pages/dashboard/Overview";
 import NewProject from "./pages/dashboard/NewProject";
 import Analytics from "./pages/dashboard/Analytics";
-import Documents from "./pages/dashboard/projects/Documents";
-import TestConsole from "./pages/dashboard/projects/TestConsole";
-import Deploy from "./pages/dashboard/projects/Deploy";
-import Configuration from "./pages/dashboard/projects/Configuration";
+import ProjectDetail from "./pages/dashboard/projects/ProjectDetail";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -30,10 +27,8 @@ const App = () => (
           <Route path="/dashboard" element={<Overview />} />
           <Route path="/dashboard/new" element={<NewProject />} />
           <Route path="/dashboard/analytics" element={<Analytics />} />
-          <Route path="/dashboard/projects/:id/documents" element={<Documents />} />
-          <Route path="/dashboard/projects/:id/test" element={<TestConsole />} />
-          <Route path="/dashboard/projects/:id/deploy" element={<Deploy />} />
-          <Route path="/dashboard/projects/:id/configuration" element={<Configuration />} />
+          <Route path="/dashboard/projects/:id" element={<ProjectDetail />} />
+          <Route path="/dashboard/projects/:id/:tab" element={<ProjectDetail />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
