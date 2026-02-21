@@ -33,7 +33,7 @@ const HeroSection = () => (
       {/* CTA Buttons */}
       <motion.div {...fadeUp(0.3)} className="flex flex-wrap justify-center gap-3 mb-5">
         <Link
-          to="/register"
+          to="/auth/register"
           className="inline-flex items-center rounded-lg bg-brand-black px-7 py-3 text-[15px] font-semibold text-white transition-all duration-150 hover:bg-gray-800 hover:-translate-y-px hover:shadow-[0_4px_12px_rgba(0,0,0,0.15)]"
         >
           Get Early Access →
