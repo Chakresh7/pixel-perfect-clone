@@ -1,6 +1,12 @@
+import DashboardLayout from '@/components/layout/DashboardLayout';
+
 const Documents = () => (
-  <div className="flex min-h-screen items-center justify-center bg-dark-bg">
-    <p className="text-gray-500 font-mono text-sm">Documents — coming soon</p>
-  </div>
+  <DashboardLayout breadcrumb={['Projects', 'Documents']}>
+    <div className="p-6 lg:p-8">
+      <h1 className="text-xl font-semibold text-[#F8FAFC] tracking-tight">Documents</h1>
+      <p className="text-sm text-[#64748B] mt-1">Documents — coming soon.</p>
+    </div>
+  </DashboardLayout>
 );
+
 export default Documents;

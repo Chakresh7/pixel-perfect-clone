@@ -1,6 +1,12 @@
+import DashboardLayout from '@/components/layout/DashboardLayout';
+
 const Configuration = () => (
-  <div className="flex min-h-screen items-center justify-center bg-dark-bg">
-    <p className="text-gray-500 font-mono text-sm">Configuration — coming soon</p>
-  </div>
+  <DashboardLayout breadcrumb={['Projects', 'Configuration']}>
+    <div className="p-6 lg:p-8">
+      <h1 className="text-xl font-semibold text-[#F8FAFC] tracking-tight">Configuration</h1>
+      <p className="text-sm text-[#64748B] mt-1">Configuration — coming soon.</p>
+    </div>
+  </DashboardLayout>
 );
+
 export default Configuration;
