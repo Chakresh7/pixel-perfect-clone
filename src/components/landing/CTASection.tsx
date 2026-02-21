@@ -10,7 +10,7 @@ const CTASection = () => (
     </p>
     <div className="flex flex-wrap justify-center gap-3 mt-9">
       <Link
-        to="/register"
+        to="/auth/register"
         className="inline-flex items-center rounded-lg bg-white px-6 py-3 text-sm font-semibold text-brand-black transition-colors hover:bg-gray-100"
       >
         Join the Waitlist

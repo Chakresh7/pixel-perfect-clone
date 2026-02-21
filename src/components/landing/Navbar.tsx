@@ -42,13 +42,13 @@ const Navbar = () => {
         {/* Right actions — desktop */}
         <div className="hidden md:flex items-center gap-3">
           <Link
-            to="/login"
+            to="/auth/login"
             className="inline-flex items-center rounded-md border border-gray-200 px-4 py-2 text-sm text-gray-600 transition-colors hover:border-gray-400"
           >
             Sign In
           </Link>
           <Link
-            to="/register"
+            to="/auth/register"
             className="inline-flex items-center rounded-md bg-brand-black px-4 py-2 text-sm font-semibold text-white transition-all hover:bg-gray-800"
           >
             Get Started →
@@ -85,8 +85,8 @@ const Navbar = () => {
               </a>
             ))}
             <div className="flex gap-3 pt-2 border-t border-gray-100">
-              <Link to="/login" className="text-sm text-gray-600">Sign In</Link>
-              <Link to="/register" className="text-sm font-semibold text-brand-black">Get Started →</Link>
+              <Link to="/auth/login" className="text-sm text-gray-600">Sign In</Link>
+              <Link to="/auth/register" className="text-sm font-semibold text-brand-black">Get Started →</Link>
             </div>
           </motion.div>
         )}
