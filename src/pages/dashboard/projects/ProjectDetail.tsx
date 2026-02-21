@@ -9,6 +9,7 @@ import DocumentsTab from '@/components/project/DocumentsTab';
 import TestConsoleTab from '@/components/project/TestConsoleTab';
 import DeployTab from '@/components/project/DeployTab';
 import ConfigurationTab from '@/components/project/ConfigurationTab';
+import AnalyticsTab from '@/components/project/AnalyticsTab';
 import { StatusDot } from '@/components/ragfloe/StatusDot';
 import { mockProjects } from '@/services/api';
 import { cn } from '@/lib/utils';
@@ -97,9 +98,7 @@ const ProjectDetail = () => {
       {activeTab === 'test' && <TestConsoleTab />}
       {activeTab === 'configuration' && <ConfigurationTab />}
       {activeTab === 'deploy' && <DeployTab />}
-      {activeTab === 'analytics' && (
-        <div className="p-8"><p className="text-sm text-[#64748B]">Analytics — coming soon.</p></div>
-      )}
+      {activeTab === 'analytics' && <AnalyticsTab />}
     </DashboardLayout>
   );
 };
